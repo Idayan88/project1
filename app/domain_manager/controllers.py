@@ -4,55 +4,6 @@ import os
 
 main = Blueprint('main', __name__)
 
-# Endpoint להרשמה של משתמש חדש
-@main.route('/register', methods=['POST'])
-def register():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-    
-    # טוען את נתוני המשתמשים
-    if not os.path.exists('users.json'):
-        users_data = []
-    else:
-        with open('users.json', 'r') as f:
-            users_data = json.load(f)
-
-    # בודק אם המשתמש כבר קיים
-    if any(user['username'] == username for user in users_data):
-        return jsonify({"status": "Error", "message": "Username already exists"}), 400
-
-    # מוסיף את המשתמש החדש
-    new_user = {"username": username, "password": password}
-    users_data.append(new_user)
-
-    # שומר את נתוני המשתמשים
-    with open('users.json', 'w') as f:
-        json.dump(users_data, f, indent=4)
-
-    return jsonify({"status": "Success", "message": "Registration successful"}), 201
-
-
-# Endpoint להתחברות של משתמש
-@main.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-
-    if not os.path.exists('users.json'):
-        return jsonify({"status": "Error", "message": "No users registered"}), 404
-
-    with open('users.json', 'r') as f:
-        users_data = json.load(f)
-
-    # בודק אם המשתמש והסיסמא נכונים
-    user = next((user for user in users_data if user['username'] == username), None)
-    if user and user['password'] == password:
-        return jsonify({"status": "Success", "message": "Login successful"}), 200
-    else:
-        return jsonify({"status": "Error", "message": "Invalid username or password"}), 400
-
 
 # Endpoint להוספת דומיין בודד
 @main.route('/add_domain', methods=['POST'])
