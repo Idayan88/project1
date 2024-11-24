@@ -1,5 +1,5 @@
 from flask import Flask, render_template , jsonify, request
-from register import initialize_json_file, add_user, read_users
+from register import initialize_json_file, add_user
 
 app = Flask(__name__)
 # Initialize the JSON file when the server starts
