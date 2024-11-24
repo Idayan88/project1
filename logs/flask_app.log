@@ -1,0 +1,17 @@
+2024-11-24 17:50:24,428 - INFO - MainThread - Hassan DevOps Application Project Initialized Successfully.
+2024-11-24 17:50:24,937 - INFO - MainThread - Hassan DevOps Application Project Initialized Successfully.
+2024-11-24 17:50:49,219 - ERROR - Thread-5 (process_request_thread) - File Error: Expecting value: line 1 column 1 (char 0)
+2024-11-24 17:51:07,225 - INFO - Thread-10 (process_request_thread) - Add the google.com domain at the user aaaa: {'ssl_issuer': 'Google Trust Services', 'ssl_expiration': '2025-01-13', 'status': 'Live'}
+2024-11-24 17:51:07,225 - INFO - Thread-10 (process_request_thread) - Domain added successfully
+2024-11-24 17:51:21,895 - ERROR - Thread-14 (process_request_thread) - Domain was found in the user domains
+2024-11-24 17:51:22,252 - INFO - Thread-14 (process_request_thread) - Domain added successfully
+2024-11-24 17:51:23,258 - INFO - Thread-14 (process_request_thread) - Add the google.net domain at the user aaaa: {'ssl_issuer': 'Google Trust Services', 'ssl_expiration': '2025-01-13', 'status': 'Live'}
+2024-11-24 17:51:23,259 - INFO - Thread-14 (process_request_thread) - Domain added successfully
+2024-11-24 17:51:24,112 - INFO - Thread-14 (process_request_thread) - Domain added successfully
+2024-11-24 17:51:25,248 - INFO - Thread-14 (process_request_thread) - Add the instagram.com domain at the user aaaa: {'ssl_issuer': 'DigiCert Inc', 'ssl_expiration': '2024-12-01', 'status': 'Live'}
+2024-11-24 17:51:25,249 - INFO - Thread-14 (process_request_thread) - Domain added successfully
+2024-11-24 17:51:25,249 - ERROR - Thread-14 (process_request_thread) - Can't use empty domain
+2024-11-24 17:51:25,250 - INFO - Thread-14 (process_request_thread) - Bulk upload successful
+2024-11-24 17:51:39,811 - INFO - Thread-16 (process_request_thread) - {'message': 'Domain instagram.com deleted successfully'}
+2024-11-24 17:51:43,520 - INFO - Thread-17 (process_request_thread) - Add the instagram.com domain at the user aaaa: {'ssl_issuer': 'DigiCert Inc', 'ssl_expiration': '2024-12-01', 'status': 'Live'}
+2024-11-24 17:51:43,522 - INFO - Thread-17 (process_request_thread) - {'success': True, 'updated_domain': {'domain': 'instagram.com', 'ssl_issuer': 'DigiCert Inc', 'ssl_expiration': '2024-12-01', 'status': 'Live'}}
