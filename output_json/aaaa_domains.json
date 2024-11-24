@@ -1,0 +1,32 @@
+[
+    {
+        "domain": "google.com",
+        "ssl_issuer": "Google Trust Services",
+        "ssl_expiration": "2025-01-13",
+        "status": "Live"
+    },
+    {
+        "domain": "google.io",
+        "status": "Down",
+        "ssl_issuer": "N/A",
+        "ssl_expiration": "N/A"
+    },
+    {
+        "domain": "google.net",
+        "ssl_issuer": "Google Trust Services",
+        "ssl_expiration": "2025-01-13",
+        "status": "Live"
+    },
+    {
+        "domain": "facebook.com",
+        "status": "Down",
+        "ssl_issuer": "N/A",
+        "ssl_expiration": "N/A"
+    },
+    {
+        "domain": "instagram.com",
+        "ssl_issuer": "DigiCert Inc",
+        "ssl_expiration": "2024-12-01",
+        "status": "Live"
+    }
+]
