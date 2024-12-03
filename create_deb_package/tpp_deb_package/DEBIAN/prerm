@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+# Stop and disable the service before removing the package
+# systemctl stop ptt.service
+# systemctl disable ptt.service
+
+# pip3 uninstall -r /etc/ptt/requirements.txt -y
