@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <p>Back to Login <a href="/logout">Logout</a></p>
+    <title>Domain Monitoring</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/static/domain.css">
+</head>
+<body>
+    <h1>Domain Monitoring</h1>
+    <form id="domain-form">
+        <label for="domain">Domain:</label>
+        <input type="text" id="domain" name="domain" placeholder="example.com" required>
+        <button type="submit">Add Domain</button>
+    </form>
+
+    <h2>Monitored Domains</h2>
+    <table id="domains-table">
+        <thead>
+            <tr>
+                <th>#</th> <!-- Row Number Column -->
+                <th>Domain</th>
+                <th>Status</th>
+                <th>SSL Expiration</th>
+                <th>SSL Issuer</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically populated -->
+        </tbody>
+    </table>
+
+    <div id="pagination">
+        <button id="prev" onclick="changePage(-1)">Prev</button>
+        <span id="page-number">Page 1</span>
+        <button id="next" onclick="changePage(1)">Next</button>
+    </div>
+    
+    <script src="/static/domain.js"></script>
+
+</body>
+</html>
+

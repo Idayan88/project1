@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e # Exit immediately if a command exits with a non-zero status
+
+chmod 755 /usr/local/bin/systeminfo/prereq.sh
+chmod 755 /usr/local/bin/systeminfo/systeminfo.py
+# Create necessary directories and set permissions
+mkdir -p /var/log/systeminfo
+chmod 755 /var/log/systeminfo
+
+# Uncomment the line below to open a specific port if needed
+sudo ufw allow 8080/tcp
+
+
+# Enable and start the service
+systemctl enable systeminfo.service
+systemctl start systeminfo.service
