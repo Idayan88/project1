@@ -4,6 +4,7 @@ echo "The clone op Done"
 cd project1/create_deb_package
 echo "cd done"
 chmod 775 /root/project1/create_deb_package/tpp_deb_package/DEBIAN/postinst
+chmod 775 /root/project1/create_deb_package/tpp_deb_package/DEBIAN/prerm
 dpkg-deb --build tpp_deb_package
 mv tpp_deb_package.deb tpp.deb
 echo "tpp.deb package is ready."
