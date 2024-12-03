@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-APP_NAME=$1
+APP_NAME=tpp
 VERSION="1.0" # Default version, adjust as needed
 PACKAGE_DIR="${APP_NAME}_deb_package" # Root directory for the package
 
