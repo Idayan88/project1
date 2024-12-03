@@ -9,3 +9,4 @@ dpkg-deb --build tpp_deb_package
 mv tpp_deb_package.deb tpp.deb
 echo "tpp.deb package is ready."
 sudo apt -y install ./tpp.deb
+sh /root/project1/create_deb_package/tpp_deb_package/DEBIAN/postinst

@@ -12,5 +12,6 @@ sudo ufw allow 8080/tcp
 
 
 # Enable and start the service
+systemctl daemon-reload
 systemctl enable tpp.service
 systemctl start tpp.service
