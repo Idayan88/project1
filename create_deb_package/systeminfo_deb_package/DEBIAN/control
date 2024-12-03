@@ -3,5 +3,5 @@ Version: 1.0
 Section: base
 Priority: optional
 Architecture: amd64
-Maintainer: Your Name <your.email@example.com>
-Description: systeminfo - display system information
+Maintainer: TPP
+Description: TPP - Domain Mon SYS
