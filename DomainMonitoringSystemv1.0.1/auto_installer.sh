@@ -1,6 +1,6 @@
 #!/bin/bash
 # install Docker and create image
-git clone -b Denis_Liveness_ssl https://github.com/Idayan88/project1.git
+git clone -b DomainMonitoringSystemv1.0.1 https://github.com/Idayan88/project1.git
 echo "The clone op Done"
 sudo apt update -y
 sudo apt install docker.io -y
