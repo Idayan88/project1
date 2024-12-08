@@ -4,7 +4,7 @@ git clone -b DomainMonitoringSystemv1.0.1 https://github.com/Idayan88/project1.g
 echo "The clone op Done"
 sudo apt update -y
 sudo apt install docker.io -y
-cd /home/ubuntu/project1/DomainMonitoringSystemv1.0.0
+cd /home/ubuntu/project1/DomainMonitoringSystemv1.0.1
 cat << EOF > "Dockerfile"
 FROM python 
 RUN mkdir /tpp
